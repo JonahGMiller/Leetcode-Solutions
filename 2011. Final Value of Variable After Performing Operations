@@ -1,0 +1,8 @@
+class Solution {
+public:
+    int finalValueAfterOperations(vector<string>& operations) {
+        int x = operations.size();
+        for(string& op: operations) if(op[1] == '-') x-=2;
+        return x;
+    }
+};
